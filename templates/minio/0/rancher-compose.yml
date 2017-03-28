@@ -9,5 +9,5 @@ version: '2'
     default: 4
     type: int
 
-minio-server:
-  scale: 6
+  minio-server:
+    scale: 6
