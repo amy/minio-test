@@ -5,10 +5,10 @@ version: '2'
   questions:
     - variable: "SCALE"
       description: "Number of minio nodes."
-      label: Minio Nodes:
+      label: "Minio Nodes:"
       required: true
       default: 4
       type: enum
 
 minio-server:
-  scale: ${SCALE}
+  scale: {{.Values.SCALE}}
