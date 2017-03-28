@@ -6,9 +6,9 @@ version: '2'
     - variable: "SCALE"
       description: "Number of minio nodes."
       label: "Minio Nodes:"
-      required: false
+      required: true
       default: 4
-      type: enum
+      type: int
 
 minio-server:
   scale: ${SCALE}
