@@ -1,4 +1,5 @@
 version: '2'
 
-minio-server:
-  scale: 6
+services: 
+  minio-server:
+    scale: 6
