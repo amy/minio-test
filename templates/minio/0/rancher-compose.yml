@@ -11,4 +11,4 @@ version: '2'
       type: enum
 
 minio-server:
-  scale: {{.Values.SCALE}}
+  scale: $SCALE
