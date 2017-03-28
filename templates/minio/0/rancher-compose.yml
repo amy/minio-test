@@ -8,7 +8,7 @@ version: '2'
       label: "Minio Nodes:"
       required: true
       default: 4
-      type: int
+      type: enum
 
 minio-server:
-  scale: {{.Values.minio_scale}}
+  scale: ${minio_scale}
