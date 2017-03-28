@@ -3,12 +3,12 @@ version: '2'
   name: Minio
   version: 2017-03-16-rancher1
   questions:
-    - variable: "minio_scale"
+    - variable: "SCALE"
       description: "Number of minio nodes."
-      label: "Minio Nodes:"
+      label: Minio Nodes:
       required: true
       default: 4
       type: enum
 
 minio-server:
-  scale: {{$minio_scale}}
+  scale: {{.Values.SCALE}}
