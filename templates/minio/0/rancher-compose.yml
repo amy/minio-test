@@ -11,4 +11,4 @@ version: '2'
       type: int
 
 minio-server:
-  scale: ${SCALE}
+  scale: {{ with $x := 4}}{{$x}}{{end}}
