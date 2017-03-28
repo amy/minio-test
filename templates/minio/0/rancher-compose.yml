@@ -36,7 +36,7 @@ version: '2'
       default: "disk"
     - variable: "VOLUME_DRIVER"
       description: "Docker driver to store volume or base path for each disks"
-      label: "Volume drver / Path"
+      label: "Volume driver / Path"
       type: "string"
       required: true
       default: "local"
@@ -68,7 +68,7 @@ version: '2'
       default: "/minio"
       type: "string"
 minio-server:
-  scale: ${MINIO_SCALE}
+  scale: "${MINIO_SCALE}"
   retain_ip: true
   health_check:
     port: 9000
