@@ -6,7 +6,7 @@ version: '2'
     - variable: "SCALE"
       description: "Number of minio nodes."
       label: "Minio Nodes:"
-      required: true
+      required: false
       default: 4
       type: enum
 
