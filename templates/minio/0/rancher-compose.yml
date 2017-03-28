@@ -9,22 +9,5 @@ catalog:
       required: true
       default: 4
       type: enum
-      options:
-        - 1
-        - 4
-        - 6
-        - 8
-        - 10
-        - 12
-        - 14
-        - 16
 minio-server:
   scale: ${MINIO_SCALE}
-  retain_ip: true
-  health_check:
-    port: 9000
-    interval: 5000
-    unhealthy_threshold: 3
-    request_line: ''
-    healthy_threshold: 2
-    response_timeout: 5000
