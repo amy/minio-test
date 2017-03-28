@@ -1,5 +1,8 @@
 version: '2'
 
-services: 
-  minio-server:
-    scale: 6
+.catalog:
+  name: Minio
+  version: 2017-03-16-rancher1
+
+minio-server:
+  scale: 6
