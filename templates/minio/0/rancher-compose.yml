@@ -8,6 +8,6 @@ catalog:
       label: "Minio Nodes:"
       required: true
       default: 4
-      type: enum
+      type: int
 minio-server:
   scale: ${MINIO_SCALE}
