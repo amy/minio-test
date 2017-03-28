@@ -4,6 +4,12 @@ version: '2'
   name: Minio
   version: 2017-03-16-rancher1
   questions:
+   - variable:
+      description:
+      label:
+      required:
+      default:
+      type:
 
 minio-server:
   scale: 6
