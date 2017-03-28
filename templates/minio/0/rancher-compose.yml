@@ -8,5 +8,6 @@ version: '2'
     required: true
     default: 4
     type: int
-section:
-  thingy: ${PUBLIC}
+
+minio-server:
+  scale: 6
