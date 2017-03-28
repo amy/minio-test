@@ -1,14 +1,12 @@
 version: '2'
 .catalog:
-  name: Minio
-  version: 2017-03-16-rancher1
+  name: test
+  version: v0.0.1
   questions:
-    - variable: "SCALE"
-      description: "Number of minio nodes."
-      label: "Minio Nodes:"
-      required: true
-      default: 4
-      type: int
-
-minio-server:
-  scale: {{ with $x := 4}}{{$x}}{{end}}
+  - variable: PUBLIC
+    label: blah blah
+    required: true
+    default: 4
+    type: int
+section:
+  thingy: ${PUBLIC}
