@@ -7,7 +7,7 @@ catalog:
       description: "Number of minio nodes."
       label: "Minio Nodes:"
       required: true
-      default: 4
-      type: int
+      default: "4"
+      type: enum
 minio-server:
   scale: ${MINIO_SCALE}
