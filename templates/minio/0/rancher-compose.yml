@@ -3,6 +3,7 @@ version: '2'
 .catalog:
   name: Minio
   version: 2017-03-16-rancher1
+  questions:
 
 minio-server:
   scale: 6
