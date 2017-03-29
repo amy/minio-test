@@ -67,7 +67,7 @@ version: '2'
       required: true
       default: "/minio"
       type: "string"
- services: 
+services: 
   minio-server:
     scale: ${MINIO_SCALE}
     retain_ip: true
