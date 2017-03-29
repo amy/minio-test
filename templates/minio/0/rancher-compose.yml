@@ -4,7 +4,23 @@ version: '2'
   name: Minio
   version: 2017-03-16-rancher1
   description: "WHY U NO WORK"
+    questions:
+    - variable: "MINIO_SCALE"
+      description: "Number of minio nodes."
+      label: "Minio Nodes:"
+      required: true
+      default: 1
+      type: enum
+      options:
+        - 1
+        - 4
+        - 6
+        - 8
+        - 10
+        - 12
+        - 14
+        - 16
 
 services: 
   minio-server:
-    scale: 6
+    scale: ${MINIO_SCALE}
