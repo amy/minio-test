@@ -5,6 +5,8 @@ services:
     image: webcenter/alpine-minio:2017-03-16_3
 
 volumes:
+  {{- if not (contains .Values.VOLUME_DRIVER "/")}}
   minio-data-0:
     per_container: true
     driver: {{.Values.VOLUME_DRIVER}}
+  {{- end}}
