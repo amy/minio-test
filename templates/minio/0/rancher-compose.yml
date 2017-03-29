@@ -5,5 +5,6 @@ version: '2'
   version: 2017-03-16-rancher1
   description: "WHY U NO WORK"
 
-minio-server:
-  scale: 6
+services: 
+  minio-server:
+    scale: 6
