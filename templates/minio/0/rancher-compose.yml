@@ -19,7 +19,6 @@ version: '2'
         - 1
         - 2
         - 4
-
 services: 
   minio-server:
     scale: ${MINIO_SCALE}
