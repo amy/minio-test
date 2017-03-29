@@ -6,7 +6,9 @@ services:
 
 volumes:
   {{- if not (contains .Values.VOLUME_DRIVER "/")}}
+    {{- range $idx, $e := atoi .Values.MINIO_DISKS}}
   minio-data-0:
     per_container: true
     driver: {{.Values.VOLUME_DRIVER}}
+    {{- end}}
   {{- end}}
