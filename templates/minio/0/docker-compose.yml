@@ -7,4 +7,4 @@ services:
 volumes:
   minio-data-0:
     per_container: true
-    driver: {{.Values.VOLUME_DRIVER}}
+    driver: {{.Values.VOLUME_DRIVER}}sdf
