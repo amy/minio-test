@@ -3,13 +3,7 @@ version: '2'
 .catalog:
   name: Minio
   version: 2017-03-16-rancher1
-  questions:
-   - variable:
-      description:
-      label:
-      required:
-      default:
-      type:
+  description: "WHY U NO WORK"
 
 minio-server:
   scale: 6
