@@ -85,9 +85,7 @@ catalog:
       
 services:
   minio-server:
-    {{- if contains .Values.VOLUME_DRIVER "/" }}
     scale: ${MINIO_SCALE}
-    {{- end}}
     retain_ip: true
     health_check:
       port: 9000
